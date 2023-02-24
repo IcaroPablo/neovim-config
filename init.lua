@@ -404,6 +404,11 @@ vim.cmd([[
     filetype plugin on "auxiliates in filetype dependant behaviour
 ]])
 
-require('impatient')
+local status_ok, impatient = pcall(require, "impatient")
+if not status_ok then
+    print("impatient-nvim not installed yet, it will work from the next neovim start")
+-- else 
+--     require('impatient')
+end
 require('plugins')
 require('mappings').setup_basic_mappings()

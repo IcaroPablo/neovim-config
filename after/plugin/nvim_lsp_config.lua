@@ -29,7 +29,7 @@ lspconfig.tsserver.setup({
 --     on_attach = on_attach_config
 -- })
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
     settings = {
         Lua = {
             runtime = {
