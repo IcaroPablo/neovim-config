@@ -102,6 +102,7 @@ function mappings.setup_basic_mappings()
     -- word substitution
     -- vim.keymap.set("n", "<C-j>", "ciw<C-r>0<ESC>", {silent = true})
     vim.keymap.set("n", "<C-s>", "\"1yiwciw<C-r>0<ESC>/<C-r>1<CR>", {silent = true})
+    vim.keymap.set("n", "<Leader>jq", ":%!jq '.'<CR>", {silent = true})
 
     -- TODO: fazer autocommand para verificar bindings
 

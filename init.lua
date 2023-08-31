@@ -43,6 +43,7 @@ vim.opt.history = 1000              -- sometimes i wanna undo many steps
 vim.opt.wildmenu = true             -- useful for autocompletion
 -- vim.opt.clipboard = vim.opt.clipboard + "unnamedplus"   -- uses the + register (aka the system clipboard) as vim clipboard 
 vim.cmd [[set clipboard+=unnamedplus]]
+vim.cmd [[set t_md=]]
 vim.opt.mouse = "a"                 -- pretend you didn't see this shit here
 
 vim.g.mapleader = ' '

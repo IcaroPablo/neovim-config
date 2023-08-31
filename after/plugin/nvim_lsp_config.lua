@@ -23,6 +23,12 @@ lspconfig.tsserver.setup({
     on_attach = on_attach_config
 })
 
+-- C
+lspconfig.clangd.setup({
+    capabilities = caps,
+    on_attach = on_attach_config
+})
+
 -- Rust
 -- lspconfig.rust_analyzer.setup({
 --     capabilities = snip_caps,

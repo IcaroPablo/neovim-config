@@ -401,9 +401,9 @@ return require('packer').startup(function(use)
     use {
         'gruvbox-community/gruvbox',
         config = function ()
-            vim.cmd([[
-                colorscheme gruvbox
-            ]])
+            vim.g.gruvbox_bold = '0'
+            vim.g.gruvbox_contrast_dark = 'hard'
+            vim.cmd([[ colorscheme gruvbox ]])
         end
     }
     use {
