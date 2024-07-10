@@ -45,6 +45,7 @@ vim.opt.wildmenu = true             -- useful for autocompletion
 vim.cmd [[set clipboard+=unnamedplus]]
 vim.cmd [[set t_md=]]
 vim.opt.mouse = "a"                 -- pretend you didn't see this shit here
+-- vim.opt.shadafile = "NONE"
 
 vim.g.mapleader = ' '
 
@@ -403,6 +404,11 @@ vim.cmd ([[
 vim.cmd([[
     syntax on "some nice and fancy syntax highlight
     filetype plugin on "auxiliates in filetype dependant behaviour
+]])
+
+-- setting gruvbox as colorscheme in manpages also disable italics :)
+vim.cmd([[
+    autocmd FileType man colorscheme gruvbox
 ]])
 
 local status_ok, impatient = pcall(require, "impatient")

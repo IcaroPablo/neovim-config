@@ -19,7 +19,14 @@ cmp.setup({
         { name = "nvim_lsp" },
         { name = "luasnip" },
         { name = "buffer" },
-        { name = "path" }
+        { 
+            name = "path",
+            option = {
+                get_cwd = function()
+                    return vim.fn.getcwd()
+                end
+            }
+        }
     })
 })
 

@@ -402,6 +402,9 @@ return require('packer').startup(function(use)
         'gruvbox-community/gruvbox',
         config = function ()
             vim.g.gruvbox_bold = '0'
+            -- vim.g.gruvbox_italic = false
+            -- vim.g.gruvbox_italicize_comments = '0'
+            -- vim.g.gruvbox_italicize_strings = '0'
             vim.g.gruvbox_contrast_dark = 'hard'
             vim.cmd([[ colorscheme gruvbox ]])
         end
